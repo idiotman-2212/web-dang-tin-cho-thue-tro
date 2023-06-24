@@ -1,0 +1,203 @@
+.detail-post{
+    position: relative;
+    border-radius: 12px;
+    padding: 30px;
+    background: white;
+}
+.dp-control{
+    position: absolute;
+    inset: 0;
+}
+.dp-view{
+    position: relative;
+    z-index:10;
+  height: 400px;
+  overflow:hidden;
+  border-radius: 4px;
+}
+.dp-left,.dp-right{
+    position: absolute;
+    width:54px;
+    height: 54px;
+    top: 50%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background: white;
+    z-index: 5;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.dp-left > i,.dp-right > i{
+    font-size: 2rem;
+    transition: all .1s ease-in-out;
+}
+.dp-left:hover > i,.dp-right:hover > i{
+    color: var(--primary-color);
+}
+.dp-left{
+    left: 0px;
+    transform: translate(-50%, -50%);
+}
+.dp-right{
+    right: 0;
+    transform: translate(50%, -50%);
+}
+.dp-left.disable, .dp-right.disable{
+    opacity: 0.5;
+    cursor: default;
+}
+.dp-left.disable:hover > i{
+    color: initial;
+}
+.dp-right.disable:hover > i{
+    color: initial;
+}
+.dp-list{
+    display:flex;
+    flex-wrap: nowrap;
+    max-height: 100%;
+    max-width:100%;
+    transition: all 0.7s ease-in-out;
+}
+.dp-item{
+    flex-shrink: 0;
+    width: 100%;
+    border-radius: 12px;
+    background-color: black;
+}
+.dp-item > img{
+    max-width: 100%;
+    display:block;
+    margin: 0 auto;
+    /* width: auto; */
+    height: 100%;
+    object-fit: cover;
+}
+.detail-container{
+    background-color: white;
+    box-shadow: 0 0 20px 20px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+.detail-info{
+    background: white;
+    border-radius: 12px;
+    padding: 0 30px 30px 30px;
+}
+.di-essential > div {
+    display:flex;
+    align-items: center;
+    margin: 2px 0;
+} 
+.di-essential > div > i {
+    min-width:20px;
+    font-size: 1.8rem;
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+.die-value{
+    font-size: 1.8rem;
+}
+.die-price > .die-value{
+    color: red;
+    font-weight: bold;
+    font-size:2.3rem; 
+}
+.di-description{
+    border-top: 1px solid rgb(239, 230, 230);
+    margin: 20px 0;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(239, 230, 230);
+}
+.did-title{
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+.di-report{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid var(--primary-color);
+    box-shadow: transparent 0px 8px 24px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.di-report > i{
+    margin-right:6px;
+    color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+}
+.di-report:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    color: red;
+    border-color: red;
+}
+.di-report:hover > i{
+    color: red;
+}
+.owner-post{
+
+}
+.op-avatar{
+    position: relative;
+    border-radius: 50%;
+    overflow:hidden;
+    width: 30%;
+    margin: 0 auto;
+}
+.op-avatar::after{
+    content: "";
+    display:block;
+    padding-top: 100%;
+    top: 0;
+}
+.op-avatar > img{
+    position: absolute;
+    inset: 0;
+}
+.op-name{
+    text-align: center;
+    margin: 10px 0;
+}
+.btn-phone-link{
+    display:block;
+
+}
+.btn-phone,.btn-zalo{
+    width:100%;
+    margin: 10px 0;
+}
+.btn-zalo-link{
+    display:block;
+}
+.button.btn-phone{
+
+}
+.button.btn-zalo{
+
+}
+@media screen and (max-width: 1050px) {
+    .dp-view{
+        height: 340px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .dp-view{
+        height: 350px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .dp-view{
+        height: 240px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .dp-view{
+        height: 200px;
+    }
+}

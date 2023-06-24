@@ -1,0 +1,527 @@
+.container-iso {
+  font-size: 1.8rem;
+}
+
+.ui-w-80 {
+  width: 80px !important;
+  height: auto;
+}
+
+.btn-default {
+  border-color: rgba(24, 28, 33, 0.1);
+  background: rgba(0, 0, 0, 0);
+  color: #4e5155;
+}
+
+label.btn {
+  margin-bottom: 0;
+}
+
+.btn-outline-primary {
+  border-color: var(--primary-color);
+  background: transparent;
+  color: var(--primary-color);
+}
+
+.button {
+  cursor: pointer;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 3px 12px;
+}
+
+.text-light {
+  color: #babbbc !important;
+}
+.account-settings-fileinput {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+}
+.avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  overflow: hidden;
+}
+.nav-control {
+ border: 1px solid rgb(238, 232, 232);
+}
+.list-group {
+  width: 100%;
+}
+.list-group-item {
+  transition: all 0.3s ease;
+  border-bottom: 1px solid rgb(243, 235, 235);
+}
+.list-group-item.active {
+  background: var(--primary-color);
+  border-color: transparent;
+}
+.list-group-item:hover {
+  background-color: var(--primary-color);
+  color:white;
+}
+a:hover {
+  color: #333;
+}
+.form-control{
+font-size:1.6rem;
+}
+
+.upload-avatar {
+  position: relative;
+  margin-top: 20px;
+  min-width: 180px;
+  font-size: 1.4rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+  padding: 10px 0;
+}
+.card-body {
+  padding: 20px;
+}
+.image-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.manapost-btn {
+margin: 20px auto;
+}
+.manapost-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index:1000;
+  transition: all 0.3s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+.manapost-container.active {
+  visibility: visible;
+  opacity: 1;
+}
+.mana-main {
+  position: relative;
+  width: 90vw;
+  min-height: 70vh;
+  background-color: white;
+  box-shadow: 0 0 30px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  padding: 30px 40px;
+  transform: translateY(-10%);
+  opacity: 0;
+}
+.manapost-container.active > .mana-main {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.man-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.man-close-btn > i {
+  color: rgb(131, 121, 121);
+  font-size: 2.6rem;
+  transition: all 0.3s ease;
+}
+.man-close-btn:hover > i {
+  color: rgb(234, 77, 77);
+}
+
+.mana-heading {
+  margin-bottom: 30px;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.mana-body {
+}
+
+.table--custom {
+  min-width: 1200px;
+}
+
+.table--custom thead th {
+  background: var(--primary-color);
+  color: white;
+}
+.table--custom tfoot th {
+  background: var(--primary-color);
+  color: white;
+}
+.mana-img-wrapper {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+.mana-img-wrapper:hover > .mana-zoom-img {
+  transform: translate(0, -50%);
+  visibility: visible;
+  opacity: 1;
+  cursor: zoom-in;
+}
+.mana-img-wrapper > img {
+  border-radius: 50%;
+}
+
+.mana-zoom-img > im {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mana-zoom-img {
+  position: absolute;
+  top: 100%;
+  left: 130%;
+  border-radius: 12px;
+  transform: translate(-12%, -50%);
+  width: 400px;
+  height: 220px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.mana-zoom-img:hover > img {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.2);
+}
+
+.table td {
+  text-align: center;
+  vertical-align: middle;
+}
+th {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.mana-body {
+  min-height: 200px;
+  border-top: 1px solid rgb(230, 226, 226);
+  overflow-y: auto;
+  height: 50vh;
+}
+
+.mana-detail-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.mana-btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.mana-btn > i {
+  font-size: 2rem;
+}
+.mana-dropdown {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translateY(-50%);
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease-in-out;
+  padding: 10px 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.mana-dropdown.active {
+  visibility: visible;
+  opacity: 1;
+  right: 100%;
+}
+.mana-list {
+}
+.mana-item {
+  padding: 4px 20px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.mana-item:hover {
+  background-color: rgb(206, 236, 239);
+}
+
+.mana-hide-btn {
+}
+.mana-modify-btn {
+}
+.col{
+text-align:center;
+margin: 10px 0;
+}
+#account-post{
+padding-left:30px;
+
+}
+
+.mana-foot{
+display:flex;
+flex-direction: column;
+align-items:center;
+}
+.mana-item.disable{
+opacity: 0.3;
+color: #ccc;
+cursor: default;
+user-select: none;
+}
+.mana-item.disable:hover{
+background-color: white;
+}
+
+ #myCustomToast {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.3);
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.2s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index:10000;
+      }
+      .custom-toast-content {
+        min-width: 30vw;
+        min-height: 30vh;
+        padding: 20px;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border-left: 5px solid var(--primary-color);
+        display: flex;
+        flex-direction: column;
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        transform: translateY(-20%);
+      }
+      .custom-toast-content > .heading {
+        text-align: center;
+        margin: 10px 0;
+        text-transform: uppercase;
+        color: rgb(146, 143, 143);
+      }
+      .custom-toast-content > .body {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .custom-toast-content > .body > .text-center {
+        font-size: 50px;
+        font-weight: bold;
+        padding-bottom: 20px;
+        color: var(--primary-color);
+      }
+      #myCustomToast.active {
+        visibility: visible;
+        opacity: 1;
+      }
+      #myCustomToast.active > .custom-toast-content {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .post{
+      padding: 0 ;
+      }
+.btn.btn-link.btn-noti{
+width:80%;
+color: inherit;
+text-decoration: none;
+font-size: 2rem;
+margin-right: 130px;
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+text-align:left;
+
+}
+.card{
+margin: 20px 0;
+background-color: white;
+border:none;
+box-shadow: 0 0 10px 1px rgba(0,0,0,0.04);
+border-radius: 0;
+}
+.card-header{
+position: relative;
+background-color: white;
+border-right: 6px solid var(--primary-color);
+}
+.card-header{
+border-bottom: 1px solid rgba(0,0,0,0.05);
+padding: 1rem 1.25rem;
+}
+.btn.focus, .btn:focus{
+box-shadow: none;
+}
+.time-label{
+position: absolute;
+right: 10px;
+top: 0px;
+bottom: 0px;
+border-left: 1px solid rgba(0,0,0,0.1);
+display:flex;
+align-items:center;
+justify-content: center;
+flex-direction:column;
+padding: 3px 10px;
+font-size: 1.6rem;
+}
+.time-label > span{
+margin: 2px 0;
+}
+.card-header:hover .title-full{
+transform: translateY(0);
+visibility:visible;
+opacity:1;
+}
+.title-full{
+position: absolute;
+width: 82%;
+bottom: 110%;
+left: 0;
+border-radius: 12px;
+background-color: white;
+box-shadow: 0 0 10px 2px rgba(0,0,0,0.05);
+padding: 10px 20px;
+line-height: 28px;
+color: rgba(0,0,0,0.6);
+transition: all 0.3s ease;
+visibility:hidden;
+opacity: 0;
+transform: translateY(50%);
+}
+.accordion>.card{
+overflow:visible;
+}
+.card.readed > .card-header{
+    color: rgba(0,0,0,0.6);
+    border-color: #ccc;
+}
+.card.readed  .card-body{
+   color: rgba(0,0,0,0.6);
+}
+.noti-icon{
+position: absolute;
+right: 5%;
+top: 50%;
+transform: translateY(-50%);
+width: 30px;
+height: 30px;
+border-radius: 50%;
+background-color: rgba(0,0,0,0.08);
+display:flex;
+justify-content: center;
+align-items:center;
+color:white !important;
+background-color: var(--red);
+}
+      #full-stars-example {
+      background-color: white;
+      border-radius: 12px;
+      display:flex;
+      justify-content: center;
+      align-items:center;
+      padding: 20px 0 10px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+      flex-direction: column;
+      margin-bottom: 20px;
+      }
+      #full-stars-example .rating-group {
+        display: inline-flex;
+      }
+      #full-stars-example .rating__icon {
+        pointer-events: none;
+      }
+      #full-stars-example .rating__input {
+        position: absolute !important;
+        left: -9999px !important;
+      }
+      #full-stars-example .rating__label {
+        cursor: pointer;
+        padding: 0 0.1em;
+        font-size: 3rem;
+      }
+      #full-stars-example .rating__icon--star {
+        color: orange;
+      }
+      #full-stars-example .rating__icon--none {
+        color: #eee;
+      }
+      #full-stars-example
+        .rating__input--none:checked
+        + .rating__label
+        .rating__icon--none {
+        color: red;
+      }
+      #full-stars-example
+        .rating__input:checked
+        ~ .rating__label
+        .rating__icon--star {
+        color: #ddd;
+      }
+      #full-stars-example
+        .rating-group:hover
+        .rating__label
+        .rating__icon--star {
+        color: orange;
+      }
+      #full-stars-example
+        .rating__input:hover
+        ~ .rating__label
+        .rating__icon--star {
+        color: #ddd;
+      }
+      #full-stars-example
+        .rating-group:hover
+        .rating__input--none:not(:hover)
+        + .rating__label
+        .rating__icon--none {
+        color: #eee;
+      }
+      #full-stars-example
+        .rating__input--none:hover
+        + .rating__label
+        .rating__icon--none {
+        color: red;
+      }
+
+
+
+

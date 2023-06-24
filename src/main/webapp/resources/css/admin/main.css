@@ -1,0 +1,118 @@
+html{
+     font-family: 'Noto Sans', sans-serif;
+}
+ul  {
+ /* list-style: none; */
+}
+.nav-link >span{
+    text-transform: uppercase;
+}
+.nav-link{
+    transition: all 0.2s ease-in-out;
+}
+.nav-link:hover{
+    background-color: #F8F9FC;
+}
+.nav-link > span{
+    font-weight: bold;
+}
+.nav-link:hover > span,
+.nav-link:hover > i{
+    color: var(--primary) !important;
+}
+.nav-item.active > .nav-link{
+    background-color: #F8F9FC;
+}
+.nav-item.active span,.nav-item.active i{
+    color: var(--primary) !important;
+}
+
+#dataTable_wrapper{
+    overflow:hidden;
+}
+.cl-red{
+    color: red;
+}
+.cl-green{
+    color: #1cc88a;
+}
+.limit-text{
+    display:block;
+    max-width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#post-table_wrapper{
+    overflow:hidden;
+}
+.detail-info{
+    position: fixed;
+    inset: 0;
+    z-index:200;
+    font-size: 1.5rem;
+    visibility: hidden;
+    opacity:0;
+    transition: all 0.3s ease-in-out;
+}
+.detail-info.active {
+    visibility: visible;
+    opacity:1;
+}
+.overlay{
+    position: absolute;
+    inset:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.2);
+}
+.di-wrapper{
+    position: relative;
+    margin: 20px;
+    padding: 30px 60px 30px 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: all .3s ease-in-out;
+    transform: translateY(-100%);
+    opacity: 0;
+    border-left: 4px solid var(--primary);
+}
+.di-close-btn{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor:pointer;
+}
+.di-close-btn > i{
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in-out;
+}
+.di-close-btn:hover > i{
+    color: rgb(201, 26, 26);
+}
+.di-heading{
+    color: var(--primary)
+}
+.di-body{
+    border-top: 1px solid rgba(0,0,0,0.2);
+}
+.di-list{
+    list-style:circle ;
+    padding-left: 20px;
+}
+.di-item{
+   margin:5px;
+}
+.detail-info.active  .di-wrapper{
+    transform: translateY(0);
+    opacity: 1;
+}

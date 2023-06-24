@@ -1,0 +1,8 @@
+<decorators defaultdir="/MEB-INF/views/layouts">
+   <decorator name="Posts" page="user.js">
+       <pattern>/*</pattern>
+    </decorator>
+   <decorator name="Admin" page="admin.jsp">
+        <pattern></pattern>
+    </decorator>
+</decorators>
