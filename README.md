@@ -41,6 +41,36 @@
 
 **4. DEMO GIAO DIỆN**
 - Giao diện admin
-  * 
+  * Thống kê số lượng tài khoản
+  ![image](https://github.com/idiotman-2212/web-dang-tin-cho-thue-tro/assets/82036270/5ef7a3e1-63e5-406b-a682-83335b444824)
+  * Thống kê số lượng bài viết chưa duyệt
+    ![image](https://github.com/idiotman-2212/web-dang-tin-cho-thue-tro/assets/82036270/38c3a37a-2d1b-4425-98c8-2c4f8d4e1fb6)
+  * Xem số lượng người dùng góp ý
+  ![image](https://github.com/idiotman-2212/web-dang-tin-cho-thue-tro/assets/82036270/48faf03d-06d4-4f37-8537-30eb768fdcea)
+  ![image](https://github.com/idiotman-2212/web-dang-tin-cho-thue-tro/assets/82036270/2a2bce2e-a741-4e0c-ade3-64df9a0332f8)
+  * Thông tin cá nhân của admin
+  ![image](https://github.com/idiotman-2212/web-dang-tin-cho-thue-tro/assets/82036270/c99ae8f1-ad56-4405-9106-4e20db6f4364)
+
+- Giao diện người dùng
+  * Trang chủ
+  ![image](https://github.com/idiotman-2212/web-dang-tin-cho-thue-tro/assets/82036270/d560798f-6aba-4294-8111-2b0b6c82e9c1)
+  * Thông tin cá nhân của người dùng
+  ![image](https://github.com/idiotman-2212/web-dang-tin-cho-thue-tro/assets/82036270/60af0701-e945-4e9b-af64-9b50e3bfa36c)
+  * Xem thông báo mà người dùng được nhận
+  ![image](https://github.com/idiotman-2212/web-dang-tin-cho-thue-tro/assets/82036270/04eb4949-17e6-41cc-abb0-8d228c5cefab)
+
+- Giao diện khách hàng
+  * Lọc bài viết của hệ thống
+  ![image](https://github.com/idiotman-2212/web-dang-tin-cho-thue-tro/assets/82036270/c573c28b-5b6c-49b0-bd7d-82bb6fd91d57)
+  * Xem các bài viết có liên quan
+  ![image](https://github.com/idiotman-2212/web-dang-tin-cho-thue-tro/assets/82036270/40ebf350-3e34-49dc-ae5c-ffd455914875)
+
+
+
+
+
+
+
+
 
 
